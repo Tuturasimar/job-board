@@ -1,1 +1,158 @@
 /* Other rules */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap");
+
+.header {
+  background-color: #333333;
+  /* height: 100px; */
+  max-width: 1440px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  /* width: 1440px; */
+}
+h1 {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 40px;
+  /* line-height: 46.88px; */
+  text-align: center;
+  font-weight: bold;
+  font-style: normal;
+}
+
+h2 {
+  font-size: 30px;
+  line-height: 35.16px;
+  font-family: "Roboto", sans-serif;
+}
+
+.list {
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+.footer {
+  height: 63px;
+  background-color: #dddddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.not_bold_text {
+  font-weight: 300;
+}
+
+.border_red,
+.border_blue,
+.border_beige,
+.border_green,
+.border_yellow {
+  border: solid 8px;
+  width: 300px;
+  height: 300px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 10px;
+}
+.border_red {
+  border-color: red;
+}
+.border_green {
+  border-color: green;
+}
+.border_yellow {
+  border-color: yellow;
+}
+.border_blue {
+  border-color: #1c9fe3;
+}
+.border_beige {
+  border-color: #f8c5af;
+}
+
+.container {
+  width: 80%;
+  height: 1080px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* ////////////////// Media Queries ///////////////// */
+
+@media (max-width: 1024px) {
+  .container {
+    height: 850px;
+  }
+  .border_red,
+  .border_blue,
+  .border_beige,
+  .border_green,
+  .border_yellow {
+    width: 200px;
+    height: 200px;
+  }
+
+  h2 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .list {
+    font-size: 15px;
+  }
+}
+@media (max-width: 768px) {
+  .border_red,
+  .border_blue,
+  .border_beige,
+  .border_green,
+  .border_yellow {
+    width: 160px;
+    height: 160px;
+  }
+  h2 {
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  .list {
+    font-size: 11px;
+  }
+  .container {
+    height: 800px;
+  }
+}
+
+@media (max-width: 425px) {
+  .border_red,
+  .border_blue,
+  .border_beige,
+  .border_green,
+  .border_yellow {
+    /* width: 150px; */
+    height: 75px;
+    flex: 100%;
+  }
+  h2 {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .list {
+    font-size: 11px;
+  }
+  .container {
+    height: 1000px;
+  }
+  .footer p {
+    font-size: 13px;
+  }
+}
